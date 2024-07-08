@@ -3,132 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
-    <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
     <title>Kate Stapley Portfolio</title>
 </head>
-
 <body>
-<!-- Header Content with nav -->
- <header>
-    <h1>Kate Stapley</h1>
-    <nav>
-        <ul>
-            <li> 
-                <a href="#about">About Me</a>
-            </li>
-            <br>
-            <li>
-                 <a href="#work">Work</a>
-            </li>
-            <br>
-            <li> 
-                <a href="#contact">Contact Me</a>
-            </li>
-            <br>
-            <li> 
-                <a href="#resume">Resume</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header Content with nav -->
+    <header class="bg-header shadow-sm py-3 px-4 d-flex justify-content-between align-items-center">
+        <h1 class="header-title mb-0">Kate Stapley</h1>
+        <nav>
+            <ul class="list-unstyled d-flex mb-0">
+                <li><a href="#about" class="nav-link mx-2" aria-label="About Me">About Me</a></li>
+                <li><a href="#work" class="nav-link mx-2" aria-label="Work">Work</a></li>
+                <li><a href="#contact" class="nav-link mx-2" aria-label="Contact Me">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-    <!-- Hero Banner with Image & Subtitle. Image is loaded to CSS as background -->
-    <div class="hero-banner">
-        <h2>e-Commerce // Digital Strategist</h2>
-    </div>
+    <main>
+        <!-- Hero Banner with Image & Subtitle. Image is loaded to CSS as background -->
+        <div class="hero-banner d-flex justify-content-end align-items-end text-right p-5">
+            <h2 class="p-3">e-Commerce // Digital Strategist</h2>
+        </div>
 
-    <!-- Section element for "page-wrapper" styling-->
-        <!-- Section Elements for About Me, Work, Contact and Resume. ID for anchor tags -->
-            <!-- Div elements with class "page-selection" for styling -->
-    <section class="page-wrapper">
-
-        <section id="about">
-            <div class="page-section">
-                <h2 class="title-container">About Me</h2>
-                <div class="content-container">
-                    <p>
-                        E-commerce and digital marketing expert with a fervent dedication to driving profitable growth and delivering exceptional business outcomes. 
+        <div class="container page-wrapper">
+            <!-- About Me Section -->
+            <section id="about" class="my-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-left">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <p class="text-justify">E-commerce and digital marketing expert with a fervent dedication to driving profitable growth and delivering exceptional business outcomes. 
                         With a strong background in managing diverse portfolios, spearheading onboarding initiatives, and leading digital projects, I'm passionate about leveraging real-time data insights and fostering team excellence.
                         My expertise in CRM systems, project management tools, and e-commerce platforms has been honed through years of experience in customer success and strategic account management. 
-                        My journey is marked by a Master's in Media Arts & Production and a relentless commitment to achieving success for both clients and my team. 
-                    </p>
-                    <br>
-                    <p>
-                        In early 2024 I joined the University of Sydney x EdX Coding Bootcamp to begin learning Coding including but not limited to Foundations of Command-Line Fundamentals, HTML & CSS, Git & GitHub, JavaScript, Third-Party API's (such as jQuery & Bootstrap) and Server-side API's, AJAX and JSON.
-                        
-                        In the technical phase the Bootcamp focused on Node.js, Object-oriented programming (OOP), Express.js, Relational databases, such as MySQL. Object-relational mapping (ORM) using Sequelize, Model-View-Controller (MVC) framework, Handlebars.js, Unit testing, Agile software development methodology and Heroku.
-                        
-                        In the third and final phase of the Bootcamp I was educated on Performance, covering; Computer Science Fundamentals, NoSQL databases such as MongoDB, Progressive Web Apps (PWA's), React and MERN Stack (MongoDB, Express.js, React, Node.js).
-                    </p>
+                        My journey is marked by a Master's in Media Arts & Production and a relentless commitment to achieving success for both clients and my team.</p>
+                        <p class="text-justify">In early 2024 I joined the University of Sydney x EdX Coding Bootcamp to begin learning Coding including but not limited to Foundations of Command-Line Fundamentals, HTML & CSS, Git & GitHub, JavaScript, Third-Party API's (such as jQuery & Bootstrap) and Server-side API's, AJAX and JSON.</p>
+                        <p class="text-justify">In the technical phase the Bootcamp focused on Node.js, Object-oriented programming (OOP), Express.js, Relational databases, such as MySQL. Object-relational mapping (ORM) using Sequelize, Model-View-Controller (MVC) framework, Handlebars.js, Unit testing, Agile software development methodology and Heroku.</p>
+                        <p class="text-justify">In the third and final phase of the Bootcamp I was educated on Performance, covering; Computer Science Fundamentals, NoSQL databases such as MongoDB, Progressive Web Apps (PWA's), React and MERN Stack (MongoDB, Express.js, React, Node.js).</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="work" class="page-section">
-            <h2 class="title-container">Work</h2>
-                <div class="content-container flex-container">
-                        <section class="card" id="one">
-                            <a href="https://katehansta17.github.io/module-one-challenge/" class="flex-item-link" target="_blank">
-                                <div class="flex-item" id="bootcamp-challenge-one">
-                                    <h3>Challenge 1</h3>
-                                    <h4>Code Refactor</h4>
-                                    <img src="./Assets/Images/IMG_7974.JPG" alt="Bootcamp Challenge One">
+            <!-- Work Section -->
+            <section id="work" class="my-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-left">
+                        <h2>Work</h2>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://katehansta17.github.io/module-one-challenge/" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 1</h3>
+                                            <h4 class="card-subtitle mb-2">Code Refactor</h4>
+                                                <div class="image-crop-row-one">
+                                                    <img src="" alt="Bootcamp Challenge One" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </section>
-
-                        <section class="card" id="two">
-                            <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
-                                <div class="flex-item" id="bootcamp-challenge-two">
-                                    <h3>Challenge 2</h3>
-                                    <h4>Portfolio Repository</h4>
-                                    <img src="./Assets/Images/IMG_8529.JPG" alt="Bootcamp Challenge Two">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 2</h3>
+                                            <h4 class="card-subtitle mb-2">Portfolio Repository</h4>
+                                                <div class="image-crop-row-two">
+                                                    <img src="" alt="Bootcamp Challenge Two" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </section>
-
-                        <section class="card" id="three">
-                            <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
-                                <div class="flex-item" id="bootcamp-challenge-three">
-                                    <h3>Challenge 3</h3>
-                                    <h4>To Be Added</h4>
-                                    <img src="./Assets/Images/IMG_8231.JPG" alt="Bootcamp Challenge Three">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 3</h3>
+                                            <h4 class="card-subtitle mb-2">To Be Added</h4>
+                                                <div class="image-crop-row-two">
+                                                    <img src="" alt="Bootcamp Challenge Three" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </section> <!--end card three-->
-                </div> <!-- end content container flex container -->
-        </section> <!--end #work page-section -->
-
-        <section id="contact" class="page-section">
-            <h2 class="title-container">Contact</h2>
-            <div class="content-container">
-                <!-- Contact details go here -->
-                 <ul class="contact-address">
-                     <li><a href="https://www.linkedin.com/in/katestapley-ecommerce/" class="fa fa-linkedin" target="_blank"></a></li>
-                     <li><a href="" class="fa fa-instagram"target="_blank"></a></li>
-                     <li><a href="https://github.com/KateHanSta17" class="fa fa-github" target="_blank"></a></li>
-                </ul>   
-            </div>
-        </section>
-
-        <section id="resume" class="page-section">
-            <h2 class="title-container">Resume</h2>
-            <div class="content-container">
-                <section class="card">
-                    <a href="./Assets/Images/KATE STAPLEY RESUME 3.5.23.pdf" class="flex-item-link" target="_blank">
-                        <div class="flex-item" id="resume">
-                            <h3>Open my CV</h3>
-                            <img src="./Assets/Images/Screenshot 2024-06-11 at 3.40.27 PM.png" alt="Kates Resume Header">
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 4</h3>
+                                            <h4 class="card-subtitle mb-2">To Be Added</h4>
+                                                <div class="image-crop-row-three">
+                                                    <img src="" alt="Bootcamp Challenge Three" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 5</h3>
+                                            <h4 class="card-subtitle mb-2">To Be Added</h4>
+                                                <div class="image-crop-row-three">
+                                                    <img src="" alt="Bootcamp Challenge Three" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card uniform-card">
+                                    <a href="https://github.com/KateHanSta17/challenge-2-project" class="flex-item-link" target="_blank">
+                                        <div class="card-body text-center">
+                                            <h3 class="card-title">Challenge 6</h3>
+                                            <h4 class="card-subtitle mb-2">To Be Added</h4>
+                                                <div class="image-crop-row-three">
+                                                    <img src="" alt="Bootcamp Challenge Three" class="img-fluid uniform-image">
+                                                </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                </section>
-            </div>
-        </section>
-    </section>
-</main>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Contact Section -->
+            <section id="contact" class="my-5">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-left">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <ul class="contact-address list-inline text-center">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/katestapley-ecommerce/" class="fa fa-linkedin" target="_blank" aria-label="LinkedIn"></a></li>
+                            <li class="list-inline-item"><a href="" class="fa fa-instagram" target="_blank" aria-label="Instagram"></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/KateHanSta17" class="fa fa-github" target="_blank" aria-label="GitHub"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
+<footer class="text-center py-4">
+    <p>&copy; 2024 Kate Stapley</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

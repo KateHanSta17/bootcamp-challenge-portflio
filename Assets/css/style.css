@@ -1,0 +1,187 @@
+/* Custom styles */
+:root {
+  --primary: #1B3022;
+  --secondary: #395756;
+  --tertiary: #4F5D75;
+  --highlight: white;
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgba(238, 238, 247, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--light);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.header,
+.page-wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-header {
+  color: var(--highlight);
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.header .header-title {
+  font-size: 4vw; /* Match the font size of the h2 */
+  line-height: 1.1;
+  color: var(--light);
+  text-shadow: 2px 2px 0px #fff, -2px 2px 0px #fff, 2px -2px 0px #fff, -2px -2px 0px #fff; /* White border around the text */
+}
+
+.header .nav-link {
+  font-size: 1.1rem; /* Increase font size by 10% */
+  color: var(--light);
+}
+
+.hero-banner {
+  background-image: url('./Assets/Images/hero-banner-background-image.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  width: 100%;
+  color: var (--highlight);
+  padding: 2% 6%;
+  box-sizing: border-box;
+}
+
+.hero-banner h2 {
+  color: var(--highlight);
+  margin-right: 6%;
+  background-color: transparent; /* Remove background */
+}
+
+.page-wrapper {
+  padding: 20px 0;
+}
+
+.page-wrapper .title-container,
+.section-heading {
+  font-size: 2rem; /* Ensure all h2 elements have the same font size */
+  line-height: 1.1;
+  text-align: left;
+  padding-right: 15px;
+  color: var(--primary);
+  border-right: 4px solid var(--primary);
+}
+
+.page-wrapper h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+  color: var(--primary);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.card {
+  border: 1px solid var(--secondary);
+  background-color: var(--tertiary);
+  color: var(--highlight);
+}
+
+.card .card-title {
+  color: var(--highlight);
+}
+
+.card .card-subtitle {
+  color: var(--highlight);
+  background-color: black;
+  display: inline-block; /* Make the background fit only the text */
+  padding: 5px;
+}
+
+.uniform-card {
+  height: 300px; /* Set a uniform height for the cards */
+}
+
+.img-fluid .uniform-image {
+  width: 100%;
+  height: 100%;
+  object-position: inherit;
+  object-fit: inherit;
+}
+
+.contact-address a {
+  padding: 5px;
+  font-size: 1.3rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s ease-in;
+}
+
+.contact-address a:hover {
+  color: var(--secondary);
+}
+
+/* Font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* GitHub */
+.fa-github {
+  background: #000000;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Custom adjustments for section headings and content alignment */
+@media (max-width: 768px) {
+  .section-heading {
+    text-align: center;
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+}
