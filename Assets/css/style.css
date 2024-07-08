@@ -57,7 +57,6 @@ p {
 
 .hero-banner {
   background-image: url('./Assets/Images/hero-banner-background-image.jpg'), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -117,6 +116,9 @@ p {
   background-color: black;
   display: inline-block; /* Make the background fit only the text */
   padding: 5px;
+  position: absolute; /* Position the h4 absolutely within the card */
+  bottom: 10px; /* Position it 10px from the bottom */
+  left: 10px; /* Position it 10px from the left */
 }
 
 .uniform-card {
@@ -183,5 +185,14 @@ p {
     border-bottom: 4px solid var(--primary);
     padding-bottom: 15px;
     margin-bottom: 20px;
+  }
+}
+ /* Sticky nav for larger screens */
+@media (min-width: 769px) {
+  .bg-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 }
